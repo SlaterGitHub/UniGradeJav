@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UniGradeJav</string>
+    <string name="yeet">Yeet</string>
+    <string name="input_displayed_here">Input Displayed Here</string>
+    <string name="name">Name:</string>
+    <string name="percentage">Percentage:</string>
+    <string name="type">Type</string>
+</resources>
