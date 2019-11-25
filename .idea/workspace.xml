@@ -10,41 +10,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93f49570-de8c-4d13-be63-f36c848fab7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/calculator_image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/Database/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/Database/DatabaseHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/Database/sqlAccess_final.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/Database/sqlAccess_final.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/learningTree/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/learningTree/Assignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/learningTree/Learner.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/learningTree/Learner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/learningTree/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/learningTree/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/learningTree/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/learningTree/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/userInterface/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/userInterface/MyAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/userInterface/RecyclerViewClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/userInterface/RecyclerViewClickListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/userInterface/SwiperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/userInterface/SwiperController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/description_former.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/description_former.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/final_card_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/final_card_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
-    </list>
+    <list default="true" id="93f49570-de8c-4d13-be63-f36c848fab7c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +20,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="51ea792e" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -63,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/Database/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+            <state relative-caret-position="261">
+              <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,11 +78,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2159">
-              <caret line="154" selection-start-line="154" selection-end-line="154" />
+            <state relative-caret-position="476">
+              <caret line="61" column="39" lean-forward="true" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1849#2100#0" />
                 <element signature="e#7696#8034#0" />
                 <element signature="e#8040#8258#0" />
               </folding>
@@ -133,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/Database/sqlAccess_final.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="631">
+              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -254,7 +220,6 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/card_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/Database/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/learningTree/Learner.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/learningTree/Assignment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/userInterface/RecyclerViewInterface.java" />
@@ -264,14 +229,15 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/userInterface/MyAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/Database/sqlAccess_final.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/Database/DatabaseHelper.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-13" />
-    <option name="y" value="-13" />
-    <option name="width" value="2585" />
-    <option name="height" value="1395" />
+    <option name="x" value="2552" />
+    <option name="y" value="-8" />
+    <option name="width" value="749" />
+    <option name="height" value="794" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -512,14 +478,22 @@
       <option name="presentableId" value="Default" />
       <updated>1572270234748</updated>
     </task>
+    <task id="LOCAL-00001" summary="Stop crash when making database">
+      <created>1574677555251</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574677555251</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1477" height="797" extended-state="6" />
+    <frame x="2552" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32276252" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24413647" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -528,14 +502,14 @@
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32882884" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.3933934" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.4989339" weight="0.39328277" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5151515" side_tool="true" visible="true" weight="0.066066064" />
-      <window_info anchor="bottom" x="0" y="273" width="1876" height="275" id="Build" order="5" sideWeight="0.4848485" visible="true" weight="0.066066064" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" weight="0.32882884" />
-      <window_info anchor="bottom" x="2691" y="775" width="1340" height="468" id="Run" order="7" sideWeight="0.4820296" weight="0.5362947" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4099099" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.52132195" side_tool="true" visible="true" weight="0.111592636" />
+      <window_info anchor="bottom" x="0" y="273" width="1876" height="275" id="Build" order="5" sideWeight="0.48454157" weight="0.6056338" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.32882884" />
+      <window_info active="true" anchor="bottom" x="2691" y="775" width="1340" height="468" id="Run" order="7" sideWeight="0.47867805" visible="true" weight="0.111592636" />
+      <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.4989339" weight="0.40953413" />
       <window_info anchor="bottom" id="Find" order="9" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.49295774" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -573,6 +547,10 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Preview" order="5" weight="0.25179" />
     </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Stop crash when making database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stop crash when making database" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -713,16 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/Database/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/learningTree/Assignment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -746,19 +714,6 @@
           <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="154" selection-start-line="154" selection-end-line="154" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1849#2100#0" />
-            <element signature="e#7696#8034#0" />
-            <element signature="e#8040#8258#0" />
           </folding>
         </state>
       </provider>
@@ -798,8 +753,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/Database/sqlAccess_final.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="631">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="61" column="39" lean-forward="true" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7696#8034#0" />
+            <element signature="e#8040#8258#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/rysl/unigradejav/src/Database/DatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
