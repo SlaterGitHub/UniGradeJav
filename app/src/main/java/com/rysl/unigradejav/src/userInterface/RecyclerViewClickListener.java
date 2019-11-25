@@ -5,7 +5,7 @@ public interface RecyclerViewClickListener {
 
     public void recyclerViewListSwiped(int position);
 
-    public String getTable();
-
     public void recyclerViewListLongClicked(int position);
+
+    public boolean menuVisible();
 }

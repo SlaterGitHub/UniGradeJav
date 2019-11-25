@@ -3,6 +3,7 @@ package com.rysl.unigradejav;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
@@ -51,16 +52,14 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mySQLLite = new sqlAccess_final(new DatabaseHelper(this));
         createUI();
     }
 
     public void createUI(){
         RecyclerView view = findViewById(R.id.col1);
-
-        mySQLLite = new sqlAccess_final(new DatabaseHelper(this));
-        currentLearners = getLearner();
-
         percentBar = findViewById(R.id.percentBar);
+        currentLearners = getLearner();
         percentBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -80,15 +79,12 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
         reView = new RecyclerViewInterface(this, view, currentLearners, this);
 
         tableName = findViewById(R.id.tableName);
-        setTable();
+
+        tableName.setText(tables[tableIndex]);
 
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
         makeMenuWidgets();
-    }
-
-    public void setTable(){
-        tableName.setText(tables[tableIndex]);
     }
 
     public void makeFinalCardWidgets(){
@@ -179,7 +175,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
     @SuppressLint("RestrictedApi")
     public void createLearnerMenu(final String table){
         menuName.setText("");
-        if(tables[tableIndex] != "end") {
+        if(tableIndex < 3) {
             if (menuVisible) {
                 addMenu.setVisibility(View.GONE);
                 setPercentVisble(false);
@@ -296,7 +292,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
         typeTitle = findViewById(R.id.typeTitle);
         spinnerType = findViewById(R.id.spinner);
         String[] types = new String[]{"Test", "Coursework"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, types);
+        ArrayAdapter<String> adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, types);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerType.setAdapter(adapter);
     }
@@ -325,7 +321,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
     public ArrayList<Learner> getLearner(){
         ArrayList<Learner> learners = mySQLLite.getLearner(currentLearner, tables[tableIndex]);
         for(Learner learner : learners){
-            learner.setWorkingPercent(mySQLLite.getWorkingPercent(learner, 0));
+            learner.setWorkingPercent(mySQLLite.getPredictedPercentage(learner));
         }
         return learners;
     }
@@ -371,12 +367,10 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
 
     @Override
     public void recyclerViewListSwiped(int position){
-        if(!menuVisible) {
-            reView.deleteLearner(position);
-            deleteFromDatabase(currentLearners.get(position - 1));
-            currentLearners.remove(position - 1);
-            vibrator.vibrate(VibrationEffect.createOneShot(100, VibrationEffect.DEFAULT_AMPLITUDE));
-        }
+        reView.deleteLearner(position);
+        deleteFromDatabase(currentLearners.get(position - 1));
+        currentLearners.remove(position - 1);
+        vibrator.vibrate(VibrationEffect.createOneShot(100, VibrationEffect.DEFAULT_AMPLITUDE));
     }
 
     @Override
@@ -388,25 +382,32 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
     }
 
     @Override
-    public String getTable(){
-        return tables[tableIndex];
+    public boolean menuVisible(){
+        return menuVisible;
     }
 
     @Override
     public void onBackPressed(){
-        if (menuVisible) {
-            createLearnerMenu(tables[tableIndex]);
+        if(tables[tableIndex] == "subject" && !menuVisible){
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
         } else {
-            tableIndex--;
-            if (tableIndex < 3) {
-                currentLearner = pastLearners.pop();
-            }
+            if (menuVisible) {
+                createLearnerMenu(tables[tableIndex]);
+            } else {
+                tableIndex--;
+                if (tableIndex < 3) {
+                    currentLearner = pastLearners.pop();
+                }
                 updateCard();
                 changeDataset();
-        }
-        if (tables[tableIndex] == "assignment") {
-            setContentView(R.layout.activity_main);
-            createUI();
+            }
+            if (tables[tableIndex] == "assignment") {
+                setContentView(R.layout.activity_main);
+                createUI();
+            }
         }
     }
 }

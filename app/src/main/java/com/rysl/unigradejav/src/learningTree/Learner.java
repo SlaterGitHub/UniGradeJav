@@ -20,7 +20,7 @@ public interface Learner {
 
     String getTable();
 
-    int getWorkingPercent();
+    double getWorkingPercent();
 
-    void setWorkingPercent(int percent);
+    void setWorkingPercent(double percent);
 }

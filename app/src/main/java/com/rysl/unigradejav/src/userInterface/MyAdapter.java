@@ -23,7 +23,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         public MyViewHolder(View view){
             super(view);
-            view.setOnClickListener(this);
             nameContent = view.findViewById(R.id.nameContent);
             percentContent = view.findViewById(R.id.percentContent);
             typeContent = view.findViewById(R.id.typeContent);
@@ -69,12 +68,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             hold.addButton.setText("+");
             hold.nameContent.setText("");
         }
-        if (learner.getPercentage() != -1) {
+        if (learner.getPercentage() > -1) {
             hold.workingPercent.setText("");
             hold.percentContent.setText(learner.getPercentage() + "%");
         } else {
             if(learner.getKey() != -1){
-                hold.workingPercent.setText("current percentage: " + learner.getWorkingPercent());
+                hold.workingPercent.setText("predicted percentage: " + learner.getWorkingPercent() + "%");
             } else{
                 hold.workingPercent.setText("");
             }
@@ -96,3 +95,4 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         return dataset.size();
     }
 }
+

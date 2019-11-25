@@ -16,7 +16,7 @@ public class SwiperController extends ItemTouchHelper.Callback {
 
     @Override
     public int getMovementFlags(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder) {
-        if(viewHolder.getLayoutPosition() != 0) {
+        if(viewHolder.getLayoutPosition() != 0 && !clickListener.menuVisible()) {
             return makeMovementFlags(0, LEFT | RIGHT);
         }
         return 0;

@@ -54,12 +54,12 @@ public class Assignment implements Learner {
     public String getTable(){ return this.table; }
 
     @Override
-    public int getWorkingPercent(){
+    public double getWorkingPercent(){
         return -1;
     }
 
     @Override
-    public void setWorkingPercent(int percent){
+    public void setWorkingPercent(double percent){
         return;
     }
 }

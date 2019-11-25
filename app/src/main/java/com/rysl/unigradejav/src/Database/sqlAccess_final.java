@@ -73,41 +73,60 @@ public class sqlAccess_final {
         return results.getString(0);
     }
 
+    public ArrayList<Double> getWorkingPercent(Learner learner, ArrayList<Double> percentages){
+        String table = "end";
+        switch (learner.getTable()){
+            case "subject": table = "module";
+            break;
 
-    //FIRST MODULE RUNS TWICE FIND OUT WHY
-    public int getWorkingPercent(Learner learner, double percent){
-        String table = "module";
-        if(learner.getTable() == "module"){
-            table = "assignment";
+            case "module": table = "assignment";
+            break;
         }
-        if(learner.getTable() != "assignment"){
+        if(table != "end"){
             ArrayList<Learner> learners = this.getLearner(learner, table);
-            for(Learner tempLearner : learners) {
-                if(table == "module"){
-                    percent = getWorkingPercent(tempLearner, percent);
-                } else {
-                    percent += getWorkingPercent(tempLearner, percent);
-                }
+            for(int x = 0; x<learners.size(); x++){
+                System.out.println(x);
+                percentages = getWorkingPercent(learners.get(x), percentages);
             }
-            if(learners.size() > 0) {
-                if (learner.getTable() == "subject") {
-                    return (int) percent / learners.size();
-                }
-                return (int) percent;
-            }
-            return 0;
+            System.out.println(percentages);
+            return percentages;
         }
         database.reopen();
         Cursor result = database.getData("SELECT RESULT FROM assignment WHERE ID = " +
                 learner.getKey() + ";");
         result.moveToNext();
         database.close();
-        percent = result.getInt(0);
+        double percent = result.getInt(0);
         double percentage = learner.getPercentage();
         if(percent != -1.0){
-            return (int) Math.round(percent*(percentage/100));
+            percentages.add(percent);
+        } else{
+            percentages.add(0.0);
         }
-        return 0;
+        percentages.add(percentage);
+        return percentages;
+    }
+
+    public double getPredictedPercentage(Learner learner){
+        ArrayList<Double> percentages = getWorkingPercent(learner, new ArrayList<Double>());
+        int x = 0;
+        double totalPercent = 0.0;
+        double totalWeight = 0.0;
+        while(x < (percentages.size())){
+            System.out.println(x);
+            if(percentages.get(x) == 0.0){
+                percentages.remove(x);
+                percentages.remove(x);
+            } else{
+                totalPercent += percentages.get(x) * (percentages.get(x+1)/100);
+                totalWeight += percentages.get(x+1);
+                x+=2;
+            }
+        }
+        System.out.println("end");
+        System.out.println(totalPercent);
+        System.out.println(totalWeight);
+        return (double) Math.round(((totalPercent*100) / totalWeight)*10)/10;
     }
 
     //----------------------------------------------------------------------------------------------

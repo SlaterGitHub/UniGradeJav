@@ -1,5 +1,7 @@
 package com.rysl.unigradejav.src.learningTree;
 
+import java.util.ArrayList;
+
 public class Module implements Learner{
     private String name;
     private int key;
@@ -7,7 +9,7 @@ public class Module implements Learner{
     private final String[] subID = {"modID", "asgID"};
     private final String subTable = "link_mod_asg";
     private final String table = "module";
-    private int workingPercent;
+    private double workingPercent;
 
      public Module(int key, String name, Learner parent){
         this.key = key;
@@ -22,7 +24,7 @@ public class Module implements Learner{
 
     @Override
      public int getPercentage(){
-         return -1;
+         return -2;
      }
 
     @Override
@@ -55,12 +57,12 @@ public class Module implements Learner{
     public String getTable(){ return this.table; }
 
     @Override
-    public void setWorkingPercent(int percent){
+    public void setWorkingPercent(double percent){
         this.workingPercent = percent;
     }
 
     @Override
-    public int getWorkingPercent(){
+    public double getWorkingPercent(){
         return this.workingPercent;
     }
 }
