@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
-    private static final String DATABASE_NAME = "unigrade.db";
+    private static final String DATABASE_NAME = "unigradejav.db";
     private static final String TABLE_NAME1 = "subject";
     private static final String TABLE_NAME2 = "link_sub_mod";
     private static final String TABLE_NAME3 = "module";
@@ -23,11 +23,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         super(context, DATABASE_NAME, null, 1);
         this.context = context;
         this.database = getWritableDatabase();
-        if(!isDatabaseCreated()){
-            System.out.println("YES");
+        if(database == null){
             onUpgrade(database, 1, 1);
+            database = getWritableDatabase();
+            createTutorial(database);
         }
-        System.out.println("NO");
     }
 
     @Override
@@ -37,6 +37,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("create table " + TABLE_NAME3 + " (ID INTEGER PRIMARY KEY NOT NULL, NAME TEXT NOT NULL)");
         db.execSQL("create table " + TABLE_NAME4 + " (modID NOT NULL, asgID NOT NULL)");
         db.execSQL("create table " + TABLE_NAME5 + " (ID INTEGER PRIMARY KEY NOT NULL, NAME TEXT NOT NULL, PERCENTAGE INTEGER NOT NULL, TYPE BOOLEAN NOT NULL, RESULT INTEGER, DESCRIPTION TEXT)");
+    }
+
+    public void createTutorial(SQLiteDatabase db){
         insertData("INSERT INTO subject VALUES (1, \"Tap card to see modules\");");
         insertData("INSERT INTO link_sub_mod VALUES (1, 1);");
         insertData("INSERT INTO link_sub_mod VALUES (1, 2);");
@@ -54,7 +57,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         insertData("INSERT INTO assignment VALUES (2, \"This is a test\", 20, 1, -1, null);");
         insertData("INSERT INTO assignment VALUES (3, \"This is a coursework\", 30, 0, -1, null);");
         insertData("INSERT INTO assignment VALUES (4, \"Click '+' to add a card\", 0, 0, -1, null);");
-
     }
 
     @Override
@@ -69,12 +71,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public void insertData(String query){
         System.out.println(query);
-        this.database.execSQL(query);
+        database.execSQL(query);
     }
 
     public Cursor getData(String query){
         System.out.println(query);
-        Cursor res = this.database.rawQuery(query, null);
+        Cursor res = database.rawQuery(query, null);
         return res;
     }
 
